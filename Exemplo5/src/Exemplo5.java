@@ -265,7 +265,20 @@ public class Exemplo5 extends javax.swing.JFrame {
     private void btnVerificar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificar2ActionPerformed
         List<String> selecionados = listaPizzas.getSelectedValuesList();
         lblSelecao.setText(String.join("; ", selecionados));
-
+        
+        List<String> nomes = new ArrayList<String>();
+        double total = 0;
+        
+        for(int i =0; i<selecionados.size(); i++)
+        {
+            String[] vetor = selecionados.get(i).split("-");
+            nomes.add(vetor[0]);
+            total = total + converteDinheiroParaDouble(vetor[1]);
+            
+        }
+         lblPizza.setText(String.join(", ", nomes));
+         lblPreco.setText("R$ " + String.format("%.2f", total));
+         
 
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVerificar2ActionPerformed
