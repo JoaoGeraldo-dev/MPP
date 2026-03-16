@@ -238,6 +238,11 @@ public class exemplo7 extends javax.swing.JFrame {
     linha[3] = String.format("R$ %.2f", total);
     
     tabela.addRow(linha);
+    
+    txtPizza.setText("");
+    txtQuantidade.setText("");
+    txtPreco.setText("");
+    
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAdicionarPizzaActionPerformed
 
