@@ -140,7 +140,12 @@ public class exemplo7 extends javax.swing.JFrame {
 
         btnExibirSomatorio.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnExibirSomatorio.setForeground(new java.awt.Color(51, 51, 255));
-        btnExibirSomatorio.setText("<html>\n<center>\nExibir<br>\nsomatorio<br>\nda coluna total\n</center>\n</html>");
+        btnExibirSomatorio.setText("<html> <center> Exibir<br> somatorio<br> da coluna total </center> </html>");
+        btnExibirSomatorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExibirSomatorioActionPerformed(evt);
+            }
+        });
 
         btnQuantidadeLinhas.setForeground(new java.awt.Color(0, 51, 255));
         btnQuantidadeLinhas.setText("<html>\n<center>\nExibir<br>\nquantidade<br>\nde linhas\n</center>\n</html>");
@@ -245,6 +250,20 @@ public class exemplo7 extends javax.swing.JFrame {
     
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAdicionarPizzaActionPerformed
+
+    private void btnExibirSomatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExibirSomatorioActionPerformed
+        double total = 0;
+        
+        for(int i = 0; i<tabelaPizzas.getRowCount(); i++)
+        {
+            String valor = tabelaPizzas.getValueAt(i, 3).toString();
+            total += converteDinheiroParaDouble(valor);
+          
+        }
+        JOptionPane.showMessageDialog(null,String.format("O total de pizzas é de R$ %.2f",total));
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExibirSomatorioActionPerformed
 
     /**
      * @param args the command line arguments
