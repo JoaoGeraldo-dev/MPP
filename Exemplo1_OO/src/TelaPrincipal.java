@@ -49,6 +49,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         btnExercicio1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnExercicio1.setText("Exercicio 1");
+        btnExercicio1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExercicio1ActionPerformed(evt);
+            }
+        });
 
         btnExercicio2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnExercicio2.setText("Exercicio 2");
@@ -97,6 +102,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     Exemplo1 tela = new Exemplo1(this, true);
     tela.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_btnExemplo1ActionPerformed
+
+    private void btnExercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExercicio1ActionPerformed
+       Exercicio1 tela = new Exercicio1(this, true);
+       tela.setVisible(true); // TODO add your handling code here:
+    }//GEN-LAST:event_btnExercicio1ActionPerformed
 
     /**
      * @param args the command line arguments
