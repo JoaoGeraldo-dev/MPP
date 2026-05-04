@@ -22,7 +22,8 @@ public class AuxiliarAdministrativo extends Funcionarios
     
     @Override
     public String toString() {
-       String resposta = "O salario do " + getNome() + " é " + getSalario(); 
+       String resposta = String.format("Aux.Adm. %d - %s - R$ %.2f", getMatricula(),
+               getNome(), getSalario());
        return resposta;
     }
 

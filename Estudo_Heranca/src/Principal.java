@@ -11,6 +11,16 @@ public class Principal
        
        System.out.println(func1);
        
+       
+       AuxiliarAdministrativo func2 = new AuxiliarAdministrativo(1002, "Vitor");
+       func2.calcularSalario();
+       System.out.println(func2);
+       
+        Professor func3 = new Professor(1003, "Guilherme", 40);
+        func3.calcularSalario();
+        System.out.println(func3);
+    
     }
     
+   
 }
