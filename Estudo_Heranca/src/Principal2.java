@@ -9,7 +9,7 @@ public class Principal2 {
         folha.adicionarFuncionario(new Coordenador(1003,"Victor", 20,5));
        
         System.out.println(String.format("O valor total da  folha de pagamento é %.2f", folha.calcularTotal()));
-        System.out.println("\n abaxio serao exibidos os funcionarios: ");
+        System.out.println("\n abaxio serao exibidos os funcionarios: " + "");
         folha.exibirFuncionarios();
     }
     
