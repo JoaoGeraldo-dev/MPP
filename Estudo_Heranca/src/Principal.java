@@ -19,6 +19,23 @@ public class Principal
         Professor func3 = new Professor(1003, "Guilherme", 40);
         func3.calcularSalario();
         System.out.println(func3);
+        
+        
+        Professor func4 = new Professor(1004, "Miguel", 40);
+        func4.calcularSalario();
+        System.out.println(func4);
+        
+        DiretorServico func5 = new DiretorServico(1005, "Danilo");
+        func5.calcularSalario();
+        System.out.println(func5);
+        
+        DiretorEscola func6 = new DiretorEscola(1006, "Romeu", 20);
+         func6.calcularSalario();
+        System.out.println(func6);
+    
+            Coordenador func7 = new Coordenador(1006, "Julio", 20,5);
+         func7.calcularSalario();
+        System.out.println(func7);
     
     }
     
