@@ -9,7 +9,7 @@ public class Principal {
         
        (new Boto("Safadao")).emitirSom();
        (new Gato("Gataomiau")).emitirSom();
-    
+        (new Porco("BilyPAI")).emitirSom();
     
     }    
 }
